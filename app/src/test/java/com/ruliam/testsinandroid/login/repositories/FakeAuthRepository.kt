@@ -1,14 +1,12 @@
 package com.ruliam.testsinandroid.login.repositories
 
-import android.graphics.Bitmap
 import com.ruliam.testsinandroid.model.AuthDomain
-import com.ruliam.testsinandroid.model.UserDomain
-import com.ruliam.testsinandroid.repositories.FirebaseAuthRepository
+import com.ruliam.testsinandroid.repositories.AuthRepository
 import com.ruliam.testsinandroid.util.LoginResult
 import com.ruliam.testsinandroid.util.RegisterResult
 import java.util.UUID
 
-class FakeFirebaseAuthRepository: FirebaseAuthRepository {
+class FakeAuthRepository: AuthRepository {
 
     private val authAccounts = mutableListOf<AuthDomain>()
 
@@ -44,7 +42,7 @@ class FakeFirebaseAuthRepository: FirebaseAuthRepository {
         if(shouldReturnNotCompletedAccount){
             return LoginResult.AccountNotCompleted
         }
-        return LoginResult.Success(account.uid)
+        return LoginResult.Success("fakeUserId")
 
     }
 
