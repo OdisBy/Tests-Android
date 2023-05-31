@@ -22,7 +22,7 @@ android {
     }
 
     kotlin {
-        jvmToolchain(11)
+        jvmToolchain(17)
     }
 
     buildTypes {
@@ -43,10 +43,13 @@ dependencies {
     implementation libs.androidx.lifecycle.viewmodel.ktx
     kapt libs.hilt.compiler
 
+    implementation libs.javax.annotation.api
+
     implementation libs.material
 
     testImplementation libs.junit
     testImplementation libs.google.truth
+    testImplementation libs.kotlinx.coroutines.test
 }
 
 kapt {

@@ -1,4 +1,4 @@
-package com.ruliam.testsinandroid.login
+package com.ruliam.testsinandroid.login.util
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer

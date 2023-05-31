@@ -8,7 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.ruliam.testsinandroid.databinding.SignInFragmentBinding
 import com.ruliam.testsinandroid.login.LoginViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SignInFragment : Fragment() {
     private var _binding: SignInFragmentBinding? = null
     private val binding get() = _binding!!
