@@ -1,4 +1,4 @@
-package com.ruliam.testsinandroid
+package com.ruliam.testsinandroid.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
