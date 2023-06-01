@@ -105,6 +105,9 @@ mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore
 mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlinVersion" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockkVersion" }
 google-truth = { module = "com.google.truth:truth", version.ref = "googleTruthVersion"}
+hilt-testing-android = { module = "com.google.dagger:hilt-android-testing", version.ref = "hiltVersion"}
+hilt-testing-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion"}
+
 
 # Api
 gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }

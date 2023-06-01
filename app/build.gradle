@@ -34,6 +34,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+
 }
 
 dependencies {
@@ -50,6 +51,9 @@ dependencies {
     testImplementation libs.junit
     testImplementation libs.google.truth
     testImplementation libs.kotlinx.coroutines.test
+
+    androidTestImplementation libs.hilt.testing.android
+    kaptAndroidTest libs.hilt.testing.compiler
 }
 
 kapt {
